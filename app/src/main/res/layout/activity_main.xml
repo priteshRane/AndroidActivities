@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="viewmodel"
             type="com.ransoft.androidactivities.ui.main.MainViewModel" />
@@ -18,11 +19,22 @@
             android:id="@+id/btn_second_activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:onClick="@{viewmodel::onSecondActivityClick}"
             android:text="@string/go_to_second_activity"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="@{viewmodel::onSecondActivityClick}"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_instance_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="@{viewmodel.onInstanceActivityClick}"
+            android:text="@string/go_to_instance_activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_second_activity" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

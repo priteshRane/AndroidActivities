@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Android Activities</string>
     <string name="go_to_second_activity">Go to Second Activity</string>
+    <string name="go_to_instance_activity">Go To Instance Activity</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
 </resources>
