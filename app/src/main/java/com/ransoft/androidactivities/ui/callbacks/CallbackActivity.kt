@@ -22,6 +22,36 @@ class CallbackActivity : AppCompatActivity(), CallbackListener {
         toast("onCreate() state")
     }
 
+    override fun onStart() {
+        super.onStart()
+        toast("onStart() state")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        toast("onResume() state")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        toast("onPause() state")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        toast("onStop() state")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        toast("onRestart() state")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        toast("onDestroy() state")
+    }
+
     override fun exit() {
         toast("Exit from activity")
         finish()
