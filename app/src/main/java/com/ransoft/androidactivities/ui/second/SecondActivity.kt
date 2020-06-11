@@ -1,5 +1,6 @@
 package com.ransoft.androidactivities.ui.second
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -16,6 +17,8 @@ class SecondActivity : AppCompatActivity() {
 
         binding.viewmodel = viewModel
 
-        viewModel.message = "Default message"
+        val message = intent.getStringExtra(Intent.EXTRA_TEXT)
+
+        viewModel.message = message
     }
 }

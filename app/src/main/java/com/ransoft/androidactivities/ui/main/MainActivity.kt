@@ -8,7 +8,7 @@ import com.ransoft.androidactivities.R
 import com.ransoft.androidactivities.databinding.ActivityMainBinding
 import com.ransoft.androidactivities.util.toast
 
-class MainActivity : AppCompatActivity(), MainListener {
+class   MainActivity : AppCompatActivity(), MainListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
