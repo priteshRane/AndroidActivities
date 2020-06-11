@@ -4,4 +4,6 @@
     <string name="go_to_instance_activity">Go To Instance Activity</string>
     <string name="decrement">-</string>
     <string name="increment">+</string>
+    <string name="exit">Exit</string>
+    <string name="activity_callback">Activity Callback</string>
 </resources>

@@ -13,4 +13,8 @@ class MainViewModel : ViewModel() {
     fun onInstanceActivityClick(view: View) {
         mainListener?.goToInstanceActivity()
     }
+
+    fun onCallbackActivityClick(view: View) {
+        mainListener?.goToCallbackActivity()
+    }
 }

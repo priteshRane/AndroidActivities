@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="viewmodel"
             type="com.ransoft.androidactivities.ui.main.MainViewModel" />
@@ -36,5 +35,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_second_activity" />
+
+        <Button
+            android:id="@+id/btn_activity_callback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/activity_callback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_instance_activity"
+            android:onClick="@{viewmodel.onCallbackActivityClick}"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.ransoft.androidactivities.R
 import com.ransoft.androidactivities.databinding.ActivityMainBinding
+import com.ransoft.androidactivities.ui.callbacks.CallbackActivity
 import com.ransoft.androidactivities.ui.instancestate.InstanceStateActivity
 import com.ransoft.androidactivities.ui.second.SecondActivity
 import com.ransoft.androidactivities.util.toast
@@ -34,5 +35,9 @@ class MainActivity : AppCompatActivity(), MainListener {
         startActivity(intent)
     }
 
-
+    override fun goToCallbackActivity() {
+        toast("Go to Callback activity")
+        val intent = Intent(this, CallbackActivity::class.java)
+        startActivity(intent)
+    }
 }
